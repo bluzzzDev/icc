@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pribadi Muhammad Adzka Fauzan</title>
+    <style>
+      /* Menggunakan Font Modern dari Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      /* Reset & Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #0b0f19; /* Warna gelap malam */
+        color: #e2e8f0;
+        line-height: 1.6;
+        padding: 20px;
+      }
+
+      /* Container Utama */
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #111827; /* Kontainer sedikit lebih terang dari background */
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid #1f2937;
+      }
+
+      /* Bagian Kepala Halaman (Header) */
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        /* Efek Glow Neon Kebiruan */
+        text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+
+        cursor: pointer !important; 
+        user-select: none; 
+      }
+
+      header p {
+        color: #38bdf8; /* Warna cyan/biru muda */
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      /* Pembatas (Garis) */
+      hr {
+        border: 0;
+        height: 10px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #374151,
+          transparent
+        );
+        margin: 30px 0;
+      }
+
+      /* Judul Section */
+      h2 {
+        color: #f1f5f9;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        position: relative;
+        padding-bottom: 5px;
+      }
+
+      /* Aksen garis bawah pada judul */
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #38bdf8;
+        border-radius: 2px;
+      }
+
+      /* Gaya Paragraf */
+      p {
+        color: #9ca3af;
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+      p b {
+        color: #ffffff;
+      }
+
+      /* Bagian Hobi / Olahraga */
+      ul {
+        list-style: none; /* Menghilangkan dot bawaan */
+        margin-top: 15px;
+      }
+
+      ul li {
+        background: #1f2937;
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border-left: 4px solid #38bdf8; /* Garis aksen di kiri */
+        color: #9ca3af;
+        transition: transform 0.2s ease;
+      }
+
+      ul li:hover {
+        transform: translateX(5px); /* Efek geser sedikit saat di-hover */
+        background: #2563eb;
+        color: #ffffff;
+      }
+
+      ul li b {
+        color: #ffffff;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      ul li:hover b {
+        color: #fdfbfb;
+      }
+
+      /* Bagian Kontak (Tombol) */
+      .social-links {
+        display: flex;
+        gap: 150px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .social-links a {
+        color: #ffffff;
+        text-decoration: none;
+        background: #1f2937;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border: 1px solid #374151;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background: #38bdf8;
+        color: #0b0f19;
+        border-color: #38bdf8;
+        box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+      }
+
+      /* Bagian Kaki Halaman (Footer) */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.85rem;
+        color: #4b5563;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bagian Kepala Halaman -->
+      <header>
+        <h1 id="nama">Muhammad Adzka Fauzan</h1>
+        <p>Night Workout Enthusiast | Penjelas Malam</p>
+      </header>
+
+      <hr />
+
+      <!-- Bagian Tentang Saya -->
+      <section>
+        <h2>Tentang Saya</h2>
+        <p>
+          Halo! Nama saya <b>Muhammad Adzka Fauzan</b>. Selamat datang di
+          halaman website pribadi saya.
+        </p>
+        <p>
+          Saya adalah seseorang yang sangat menikmati produktivitas di waktu
+          malam, salah satunya melalui aktivitas fisik. Ketika dunia mulai sepi,
+          di situlah energi saya justru sedang tinggi-tingginya.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Bagian Hobi -->
+      <section>
+        <h2>Olahraga Malam Favorit</h2>
+        <p>
+          Bagi saya, olahraga malam punya sensasi tersendiri—udaranya lebih
+          sejuk, jalanan lebih tenang, dan suasananya jauh lebih fokus. Berikut
+          adalah beberapa aktivitas yang biasa saya lakukan:
+        </p>
+
+        <ul>
+          <li>
+            <b>Night Run (Lari Malam)</b>
+            Menikmati jalanan kota yang mulai lengang di bawah lampu jalanan.
+          </li>
+          <li>
+            <b>Calisthenics / Street Workout</b>
+            Memanfaatkan fasilitas taman kota atau area terbuka saat malam hari.
+          </li>
+          <li>
+            <b>Gowes Malam (Cycling)</b>
+            Bersepeda santai keliling kota untuk menyegarkan pikiran setelah
+            seharian beraktivitas.
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- Bagian Kontak -->
+      <section>
+        <h2>Hubungi Saya</h2>
+        <p>
+          Punya hobi yang sama atau ingin sekadar berdiskusi? Jangan ragu untuk
+          menyapa saya melalui tautan di bawah ini:
+        </p>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="mailto:adzka@example.com">Kirim Email</a>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Bagian Kaki Halaman -->
+      <footer>
+        <p>&copy; 2026 Muhammad Adzka Fauzan. Crafted with pride.</p>
+      </footer>
+    </div>
+    <script>
+      const namaElement = document.getElementById("nama");
+
+      // JIKA DI-KLIK LEWAT LAPTOP / PC
+      namaElement.addEventListener("click", function () {
+        if (namaElement.innerText === "Muhammad Adzka Fauzan") {
+          namaElement.innerText = "LUZ";
+        } else {
+          namaElement.innerText = "Muhammad Adzka Fauzan";
+        }
+      });
+    </script>
+  </body>
+</html>
