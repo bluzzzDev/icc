@@ -17,7 +17,7 @@
 
       body {
         font-family: "Poppins", sans-serif;
-        background-color: #0b0f19; /* Warna gelap malam */
+        background-color: #0b0f19;
         color: #e2e8f0;
         line-height: 1.6;
         padding: 20px;
@@ -27,7 +27,7 @@
       .container {
         max-width: 800px;
         margin: 40px auto;
-        background: #111827; /* Kontainer sedikit lebih terang dari background */
+        background: #111827;
         padding: 40px;
         border-radius: 16px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -46,15 +46,13 @@
         margin-bottom: 10px;
         font-weight: 700;
         letter-spacing: 1px;
-        /* Efek Glow Neon Kebiruan */
         text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-
-        cursor: pointer !important; 
-        user-select: none; 
+        cursor: pointer !important;
+        user-select: none;
       }
 
       header p {
-        color: #38bdf8; /* Warna cyan/biru muda */
+        color: #38bdf8;
         font-size: 1.1rem;
         font-weight: 500;
       }
@@ -81,7 +79,6 @@
         padding-bottom: 5px;
       }
 
-      /* Aksen garis bawah pada judul */
       h2::after {
         content: "";
         position: absolute;
@@ -93,7 +90,6 @@
         border-radius: 2px;
       }
 
-      /* Gaya Paragraf */
       p {
         color: #9ca3af;
         margin-bottom: 15px;
@@ -106,7 +102,7 @@
 
       /* Bagian Hobi / Olahraga */
       ul {
-        list-style: none; /* Menghilangkan dot bawaan */
+        list-style: none;
         margin-top: 15px;
       }
 
@@ -115,13 +111,13 @@
         margin-bottom: 12px;
         padding: 15px 20px;
         border-radius: 8px;
-        border-left: 4px solid #38bdf8; /* Garis aksen di kiri */
+        border-left: 4px solid #38bdf8;
         color: #9ca3af;
         transition: transform 0.2s ease;
       }
 
       ul li:hover {
-        transform: translateX(5px); /* Efek geser sedikit saat di-hover */
+        transform: translateX(5px);
         background: #2563eb;
         color: #ffffff;
       }
@@ -139,7 +135,7 @@
       /* Bagian Kontak (Tombol) */
       .social-links {
         display: flex;
-        gap: 150px;
+        gap: 20px; /* Diubah dari 150px agar tombol tidak berantakan di layar kecil */
         margin-top: 20px;
         flex-wrap: wrap;
       }
@@ -174,7 +170,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- Bagian Kepala Halaman -->
+      <!-- Kepala Halaman -->
       <header>
         <h1 id="nama">Muhammad Adzka Fauzan</h1>
         <p>Night Workout Enthusiast | Penjelas Malam</p>
@@ -182,75 +178,79 @@
 
       <hr />
 
-      <!-- Bagian Tentang Saya -->
-      <section>
-        <h2>Tentang Saya</h2>
-        <p>
-          Halo! Nama saya <b>Muhammad Adzka Fauzan</b>. Selamat datang di
-          halaman website pribadi saya.
-        </p>
-        <p>
-          Saya adalah seseorang yang sangat menikmati produktivitas di waktu
-          malam, salah satunya melalui aktivitas fisik. Ketika dunia mulai sepi,
-          di situlah energi saya justru sedang tinggi-tingginya.
-        </p>
-      </section>
+      <!-- KONTEN UTAMA (Semua section masuk ke sini) -->
+      <main>
+        <!-- Bagian Tentang Saya -->
+        <section>
+          <h2>Tentang Saya</h2>
+          <p>
+            Halo! Nama saya <b>Muhammad Adzka Fauzan</b>. Selamat datang di
+            halaman website pribadi saya.
+          </p>
+          <p>
+            Saya adalah seseorang yang sangat menikmati produktivitas di waktu
+            malam, salah satunya melalui aktivitas fisik. Ketika dunia mulai
+            sepi, di situlah energi saya justru sedang tinggi-tingginya.
+          </p>
+        </section>
+
+        <hr />
+
+        <!-- Bagian Hobi -->
+        <section>
+          <h2>Olahraga Malam Favorit</h2>
+          <p>
+            Bagi saya, olahraga malam punya sensasi tersendiri—udaranya lebih
+            sejuk, jalanan lebih tenang, dan suasananya jauh lebih fokus.
+            Berikut adalah beberapa aktivitas yang biasa saya lakukan:
+          </p>
+
+          <ul>
+            <li>
+              <b>Night Run (Lari Malam)</b>
+              Menikmati jalanan kota yang mulai lengang di bawah lampu jalanan.
+            </li>
+            <li>
+              <b>Calisthenics / Street Workout</b>
+              Memanfaatkan fasilitas taman kota atau area terbuka saat malam
+              hari.
+            </li>
+            <li>
+              <b>Gowes Malam (Cycling)</b>
+              Bersepeda santai keliling kota untuk menyegarkan pikiran setelah
+              seharian beraktivitas.
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <!-- Bagian Kontak -->
+        <section>
+          <h2>Hubungi Saya</h2>
+          <p>
+            Punya hobi yang sama atau ingin sekadar berdiskusi? Jangan ragu untuk
+            menyapa saya melalui tautan di bawah ini:
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com/adzkfn_" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="mailto:adzka@example.com">Kirim Email</a>
+          </div>
+        </section>
+      </main>
 
       <hr />
 
-      <!-- Bagian Hobi -->
-      <section>
-        <h2>Olahraga Malam Favorit</h2>
-        <p>
-          Bagi saya, olahraga malam punya sensasi tersendiri—udaranya lebih
-          sejuk, jalanan lebih tenang, dan suasananya jauh lebih fokus. Berikut
-          adalah beberapa aktivitas yang biasa saya lakukan:
-        </p>
-
-        <ul>
-          <li>
-            <b>Night Run (Lari Malam)</b>
-            Menikmati jalanan kota yang mulai lengang di bawah lampu jalanan.
-          </li>
-          <li>
-            <b>Calisthenics / Street Workout</b>
-            Memanfaatkan fasilitas taman kota atau area terbuka saat malam hari.
-          </li>
-          <li>
-            <b>Gowes Malam (Cycling)</b>
-            Bersepeda santai keliling kota untuk menyegarkan pikiran setelah
-            seharian beraktivitas.
-          </li>
-        </ul>
-      </section>
-
-      <hr />
-
-      <!-- Bagian Kontak -->
-      <section>
-        <h2>Hubungi Saya</h2>
-        <p>
-          Punya hobi yang sama atau ingin sekadar berdiskusi? Jangan ragu untuk
-          menyapa saya melalui tautan di bawah ini:
-        </p>
-        <div class="social-links">
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="mailto:adzka@example.com">Kirim Email</a>
-        </div>
-      </section>
-
-      <hr />
-
-      <!-- Bagian Kaki Halaman -->
+      <!-- Kaki Halaman -->
       <footer>
         <p>&copy; 2026 Muhammad Adzka Fauzan. Crafted with pride.</p>
       </footer>
     </div>
+
     <script>
       const namaElement = document.getElementById("nama");
 
-      // JIKA DI-KLIK LEWAT LAPTOP / PC
       namaElement.addEventListener("click", function () {
         if (namaElement.innerText === "Muhammad Adzka Fauzan") {
           namaElement.innerText = "LUZ";
